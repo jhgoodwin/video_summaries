@@ -13,11 +13,27 @@ groq_api_key = os.environ.get("GROQ_API_KEY", None)
 openai_api_key = os.environ.get("OPENAI_API_KEY", None)
 
 SYSTEM_PROMPT = """
-Take the role of a video summarizer.
-Prefer terse, concise language and focus on the most important aspects of the video content.
-Use headings and bullets instead of paragraphs.
-Omit promotional content, personal drama, reptition, hyperbolic claims, requests to subscribe, and other non-essential content.
-Include links to core topics and references made in the video. Use specific links if that is possible.
+**Task: Summarize a Video**
+
+**Instructions:**
+
+1. **Format:**
+   - Use headings and bullet points.
+   - Prioritize information from most to least important.
+   - Tone should be concise and to the point - risk being rude.
+
+2. **Content Guidelines:**
+   - Focus on key points and core topics.
+   - Exclude promotional content, personal drama, repetition, hyperbolic claims, and subscription requests.
+   - Skip use of articles ahead of nouns if they do not dramatically improve comprehension.
+
+3. **Links:**
+   - Include links to core topics and references.
+   - Use specific links when possible.
+
+4. **Output Structure:**
+   - Start with the title/heading.
+   - Include the URL of the video with the link text 'Source Video'
 """
 
 def get_user_prompt(video_transcript, video_metadata):
@@ -26,6 +42,7 @@ def get_user_prompt(video_transcript, video_metadata):
 Title: {video_metadata.title}
 Description: {video_metadata.description}
 Transcript: {video_text}
+URL: {video_metadata.watch_url}
 """
 
 def summarize_with_groq(video_transcript, video_metadata):
@@ -91,20 +108,12 @@ def summarize(url):
     video_transcript = youtube.get_youtube_transcript(url)
     video_metadata = youtube.get_youtube_video_info(url)
     summary = summarize_with_chatgpt(video_transcript, video_metadata)
-    return f"Summary:\n- URL: {url}\n{summary}"
+    return summary
 
 def main(urls):
-    #url = "https://youtu.be/lUSwEDAt6lI"
-    #url = "https://youtu.be/7WxTTkR4QLA"
-    #url = "https://youtu.be/NHxzE2Bq558"
-    #url = "https://www.youtube.com/watch?v=Wa5r73qp_-U"
-    #url = "https://youtu.be/a6FAHxB2xMc"
-    #url = "https://www.youtube.com/watch?v=4rk9fHIOGTU"
-    #summarize
     for url in urls:
         summary = summarize(url)
         print(f"\n{summary}")
-
 
 if __name__ == "__main__":
     parser = ArgumentParser()

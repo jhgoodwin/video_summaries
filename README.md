@@ -38,81 +38,78 @@ python summarize/main.py <youtube_video_url or video_id>
 Example output:
 
 ```bash
-python summarize/main.py https://www.youtube.com/watch?v=4rk9fHIOGTU
+python summarize/main.py https://youtube.com/watch?v=nscGizM9NQw
 
-Summary:
-- URL:https://www.youtube.com/watch?v=4rk9fHIOGTU
-# Video Summary: Llama 8b Tested - A Huge Step Backwards
+# Costs Explode for Nuclear Fusion Flagship Project -- Is It Still Worth the Money?
+
+[Source Video](https://youtube.com/watch?v=nscGizM9NQw)
 
 ## Key Points
-- **Model Comparison**: 
-  - Llama 3.1 8B shows a significant quality improvement over its predecessor.
-  - Benchmarks indicate Llama 3.1 8B scores double in human evaluation compared to the previous model.
 
-- **Testing Setup**:
-  - Model hosted on Vulture using Open Web UI.
-  - Tests include coding tasks and logical reasoning.
+- **Project Overview**
+  - International Thermonuclear Experimental Reactor (ITER) aims to be first nuclear fusion machine generating net energy.
+  - Located in France, construction began in 2010.
 
-- **Performance Results**:
-  - Basic coding tasks performed well, but complex tasks (e.g., writing a game) had issues.
-  - Censorship tests showed limitations in providing certain information.
-  - Logical reasoning tasks yielded mixed results, with some failures noted.
+- **Current Status**
+  - Initial plasma run delayed from 2025 to 2034.
+  - Project cost escalated from $5 billion to over $20 billion.
 
-- **Overall Impression**:
-  - The model's performance was disappointing, failing to meet expectations in several areas.
-  - The reviewer expresses frustration with the model's limitations despite its speed.
+- **Funding Sources**
+  - Funded by European countries, China, India, Japan, South Korea, Russia, and the U.S.
+  - Taxpayer money involved.
 
-## Benchmarks
-- **Human Eval**: 34 (previous) vs. 68 (current)
-- **GSM 8K**: 0.57 (previous) vs. 0.84 (current)
-- **General Performance**: Improvements noted but not substantial across all tests.
+- **Challenges Faced**
+  - COVID-19 paused construction; cracks found in installed components.
+  - Issues with parts from different manufacturers causing stress and corrosion.
 
-## Conclusion
-- The Llama 3.1 8B model is fast but underperforms in quality and reasoning tasks.
-- The reviewer expresses a negative bias towards the model's capabilities.
+- **Future Implications**
+  - Delay raises questions about project’s purpose and relevance.
+  - Potential for private companies to advance fusion technology faster than ITER.
 
-## References
-- [Llama 3.1 8B](https://example.com)
-- [Vulture Cloud Services](https://example.com)
+- **Alternative Technologies**
+  - Other fusion methods like stellarators and inertial confinement may lead to quicker results.
+  - ITER's data collection may still be necessary despite delays.
 
+- **Conclusion**
+  - Uncertainty about ITER's value as private sector progresses.
+  - Ongoing debate on whether continued investment is justified.
 ```
 
 Notice the output is markdown which will look like this:
 
-Summary:
-- URL:https://www.youtube.com/watch?v=4rk9fHIOGTU
-# Video Summary: Llama 8b Tested - A Huge Step Backwards
+# Costs Explode for Nuclear Fusion Flagship Project -- Is It Still Worth the Money?
+
+[Source Video](https://youtube.com/watch?v=nscGizM9NQw)
 
 ## Key Points
-- **Model Comparison**: 
-  - Llama 3.1 8B shows a significant quality improvement over its predecessor.
-  - Benchmarks indicate Llama 3.1 8B scores double in human evaluation compared to the previous model.
 
-- **Testing Setup**:
-  - Model hosted on Vulture using Open Web UI.
-  - Tests include coding tasks and logical reasoning.
+- **Project Overview**
+  - International Thermonuclear Experimental Reactor (ITER) aims to be first nuclear fusion machine generating net energy.
+  - Located in France, construction began in 2010.
 
-- **Performance Results**:
-  - Basic coding tasks performed well, but complex tasks (e.g., writing a game) had issues.
-  - Censorship tests showed limitations in providing certain information.
-  - Logical reasoning tasks yielded mixed results, with some failures noted.
+- **Current Status**
+  - Initial plasma run delayed from 2025 to 2034.
+  - Project cost escalated from $5 billion to over $20 billion.
 
-- **Overall Impression**:
-  - The model's performance was disappointing, failing to meet expectations in several areas.
-  - The reviewer expresses frustration with the model's limitations despite its speed.
+- **Funding Sources**
+  - Funded by European countries, China, India, Japan, South Korea, Russia, and the U.S.
+  - Taxpayer money involved.
 
-## Benchmarks
-- **Human Eval**: 34 (previous) vs. 68 (current)
-- **GSM 8K**: 0.57 (previous) vs. 0.84 (current)
-- **General Performance**: Improvements noted but not substantial across all tests.
+- **Challenges Faced**
+  - COVID-19 paused construction; cracks found in installed components.
+  - Issues with parts from different manufacturers causing stress and corrosion.
 
-## Conclusion
-- The Llama 3.1 8B model is fast but underperforms in quality and reasoning tasks.
-- The reviewer expresses a negative bias towards the model's capabilities.
+- **Future Implications**
+  - Delay raises questions about project’s purpose and relevance.
+  - Potential for private companies to advance fusion technology faster than ITER.
 
-## References
-- [Llama 3.1 8B](https://example.com)
-- [Vulture Cloud Services](https://example.com)
+- **Alternative Technologies**
+  - Other fusion methods like stellarators and inertial confinement may lead to quicker results.
+  - ITER's data collection may still be necessary despite delays.
+
+- **Conclusion**
+  - Uncertainty about ITER's value as private sector progresses.
+  - Ongoing debate on whether continued investment is justified.
 
 ---
 
